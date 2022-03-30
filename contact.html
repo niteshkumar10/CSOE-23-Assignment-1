@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="https://kit.fontawesome.com/e688e26ba1.js" crossorigin="anonymous"></script>
+        <title>TRAVEL WEBSITE | Contact Page</title> 
+        <style>#myBtn {
+            display: none;
+            position: fixed;
+            bottom: 8px;
+            right: 12px;
+            z-index: 99;
+            font-size: 12px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        #myBtn:hover {
+            background-color: #555;
+        }
+      </style>
+    </head>
+<body>
+    <nav class="navbar bg-dark">
+        <div class="container">
+            <h1 class="logo lg-heading text-light">Gada Tours and Travels</h1>
+            <ul class="nav-items">
+                <li class="nav-item "><a href="./index.html">Home</a></li>
+                <li class="nav-item"><a href="./about.html">About</a></li>
+                <li class="nav-item"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+    <div class="container">
+        <section class="contact-form">
+            <div class="form-wrapper">
+                <div class="company-address">
+                    <div class="address-group">
+                        <i class="fas fa-user-tie fa-3x text-red"></i>
+                        <h2 class="text-gray md-heading">Contact Name</h2>
+                        <p>Jethalal Champaklal Gada</p>"
+                    </div>
+                    <div class="address-group">
+                        <i class="fas fa-map-marker-alt fa-3x text-red"></i>
+                        <h2 class="text-gray md-heading">Location</h2>
+                        <p>Gokuldham Society, Powder Gali, Goragoan (east), Mumbai, Pincode-123456</p>
+                    </div>
+                    <div class="address-group">
+                        <i class="far fa-envelope fa-3x text-red"></i>
+                        <h2 class="text-gray md-heading">Email</h2>
+                        <p>Jethalala@gmail.com</p>
+                    </div>
+                    <div class="address-group">
+                        <i class="fas fa-phone-square-alt fa-3x text-red"></i>
+                        <h2 class="text-gray md-heading">Call</h2>
+                        <p>+91 9382716450</p>
+                    </div>
+                    <img src="./img/map.jpg" alt="Company image">
+                </div>
+
+                <h2 style="font-size:3vw;">Get-In Touch with us</h2>
+                <form action="/action_page.php">
+                    <input type="text" placeholder="First Name" id="fname" name="fname" required><br><br>
+                    <input type="text" placeholder="Last Name" id="lname" name="lname" required><br><br>
+                    <input type="numbers" placeholder="Phone number" id="Phone" name="Phone" required><br><br><br>
+                    
+                    <label for="type">Form Type:</label>
+                    <select id="type" name="type">
+                        <option value="Feedback">Feedback</option>
+                        <option value="Query">Query</option>
+                        <option value="Complain">Complain</option>
+                    </select><br><br><br>
+                    
+                    <input type="text" placeholder="Description" id="description" name="description"><br><br>
+                    <input type="submit" onClick="myFunction()"/>
+                    <script>
+                    function myFunction() {
+                        window.location.href="./index.html";
+                    }
+                    </script>
+                    
+                        
+                </form> 
+            </div>
+        </section>
+    </div>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }         
+    
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+</body>
+</html>

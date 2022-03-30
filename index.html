@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/e688e26ba1.js" crossorigin="anonymous"></script>
+    <title>TRAVEL WEBSITE | WELCOME</title> 
+    <style>#myBtn {
+        display: none;
+        position: fixed;
+        bottom: 8px;
+        right: 10px;
+        z-index: 99;
+        font-size: 12px;
+        border: none;
+        outline: none;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;    
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+      .fa-instagram {
+                color: white;
+        }
+
+        .fa-twitter {
+                color: white;
+        }
+
+        .fa-facebook {
+                color: white;
+        }
+        .fa-youtube {
+                color: white;
+        }
+      
+      #myBtn:hover {
+        background-color: #555;
+      }
+      </style>
+</head>
+<body>
+    <header class = "header">
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo lg-heading text-light">Gada Tours and Travels</h1>
+                <ul class="nav-items">
+                    <li class="nav-item "><a href="./index.html">Home</a></li>
+                    <li class="nav-item"><a href="./about.html">About</a></li>
+                    <li class="nav-item"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header-content">
+            <h1 class="lg-heading text-light">travel the world</h1>
+            <p class="text-light ">travel the world, experience the greatness, it's the best gift from nature</p>
+            <a href="#explore-places" class="btn btn-primary text-red">Explore Places</a>
+        </div>
+    </header>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+    <section class="showcase" id="explore-places">
+        <div class="container">
+            <div class="row row1">
+                <div class="img-box">
+                    <img src="./img/showcase-photo3.jpg" alt="image desc">
+                </div>
+                <div class="text-box">
+                    <h2 class="lg-heading  text-black">DEBANVY, U.K</h2>
+                    <p class="text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia eius minus, labore voluptates eaque necessitatibus voluptatem quas totam quidem, odio numquam inventore beatae quam, debitis accusamus laboriosam optio sapiente.</p>
+                    <a href="./about.html" class="btn btn-secondary">More</a>
+                </div>
+            </div>
+            <div class="row row2">
+                <div class="img-box">
+                    <img src="./img/showcase-photo1.jpg" alt="">
+                </div>
+                <div class="text-box">
+                    <h2 class="lg-heading text-black">DESERT, EGYPT</h2>
+                    <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga nesciunt esse tempora obcaecati nisi non aperiam, laborum, ipsam reiciendis ea nostrum quod maiores adipisci quidem quas est totam excepturi eaque?</p>
+                    <a href="./about.html" class="btn btn-secondary">More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="box-wrapper">
+                <div class="box box-1">
+                    <i class="fa-solid fa-route fa-2x text-red"></i>
+                    <h2 class="md-heading">Adventure</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni earum doloribus facere ipsum odit voluptate obcaecati cum dolorum quod.</p>
+                </div>
+                <div class="box box-2">
+                    <i class="fa-solid fa-strikethrough fa-2x"></i>
+                    <h2 class="md-heading">Less Price</h2>
+                    <p>We here at Gada Tours and Travels provide pocket friendly travelling experience to some of the exciting places around globe.</p>
+                </div>
+                <div class="box box-3">
+                    <i class="fa-solid fa-user-check fa-2x text-red"></i>
+                    <h2 class="md-heading">Experience</h2>
+                    <p>Do everything or do nothing. Either way your holiday will be nothing less than extraordinary. This is the guarantee we are willing to give.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-media-links">
+            
+            <a href="https://www.instagram.com/travelandleisure/" class="fa fa-instagram fa-4x"></a>
+            <a href="https://twitter.com/traveltours_in" class="fa fa-twitter fa-4x"></a>
+            <a href="https://www.facebook.com/traveltours.in/" class="fa fa-facebook fa-4x"></a>
+            <a href="https://www.youtube.com/c/tourtravels" class="fa fa-youtube fa-4x"></a>
+        </div>
+        
+        <p>Gada Tours and Travels &copy; 2022, All Rights Reserved</p>
+    </footer>
+    <script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }         
+
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+</body>
+</html>
